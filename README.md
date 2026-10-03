@@ -1,3 +1,15 @@
-Công cụ sữ dụng trong bài
-Thư viện:back-to-top,coutup,wow
-Các công nghệ sử dụng: HTML5, CSS3, Tailwind CSS, Animate.css và Font Awesome.
+# Công cụ và công nghệ sử dụng
+
+## Thư viện
+
+- Back to Top
+- CountUp.js
+- WOW.js
+
+## Công nghệ
+
+- HTML5
+- CSS3
+- Tailwind CSS
+- Animate.css
+- Font Awesome
