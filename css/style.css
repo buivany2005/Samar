@@ -1,0 +1,269 @@
+.brand-gradient,
+.brand-button,
+.check-icon {
+  background: linear-gradient(to right, #ec4899 0%, #fb923c 51%, #ec4899 100%);
+}
+
+.brand-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-size: 200%;
+  background-position: left center;
+  transition: all 0.5s;
+}
+
+.brand-button:hover {
+  background-position: right center;
+}
+
+.brand-text {
+  background: linear-gradient(to right, #ec4899, #fb923c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.service-card {
+  border-style: dashed;
+  transition:
+    border-color 0.4s ease,
+    transform 0.4s ease;
+}
+
+.service-card:hover {
+  border-top-color: #fb923c;
+  border-right-color: #f4728f;
+  border-bottom-color: #ec4899;
+  border-left-color: #f4728f;
+  transform: translateY(-8px);
+}
+
+.feature-card {
+  min-height: 11.5rem;
+  transition:
+    background 1s ease,
+    color 1s ease,
+    transform 1s ease;
+}
+
+.feature-icon {
+  flex-shrink: 0;
+  color: #f55f8d;
+  transition: color 1s ease;
+}
+
+.feature-card h3,
+.feature-card p {
+  transition: color 1s ease;
+}
+
+.feature-card:hover {
+  background: linear-gradient(to right, #ec4899, #fb923c);
+  transform: translateY(-4px);
+}
+
+.feature-card:hover .feature-icon,
+.feature-card:hover h3,
+.feature-card:hover p {
+  color: #fff;
+}
+
+.feature-illustration {
+  transform-origin: center bottom;
+  animation: feature-swing 4s ease-in-out infinite alternate;
+}
+
+.portfolio-item::before {
+  position: absolute;
+  z-index: 10;
+  top: -60%;
+  left: 0;
+  width: 28%;
+  height: 220%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(255 255 255 / 0.55),
+    transparent
+  );
+  content: "";
+  pointer-events: none;
+  transform: rotate(25deg) translateX(-300%);
+  transition: transform 0.9s ease-in-out;
+}
+
+.portfolio-item:hover::before {
+  transform: rotate(25deg) translateX(650%);
+}
+
+.portfolio-plus {
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+  padding-bottom: 0.2rem;
+}
+
+@keyframes feature-swing {
+  0% {
+    transform: rotate(-2deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(0deg) translateY(-4px);
+  }
+
+  100% {
+    transform: rotate(2deg) translateY(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature-card:nth-child(2) {
+    transform: translateX(4rem);
+  }
+
+  .feature-card:nth-child(2):hover {
+    transform: translate(4rem, -4px);
+  }
+}
+
+header nav .ink-text:hover {
+  color: #ec4899;
+}
+
+header nav .ink-text span {
+  display: inline-block;
+}
+
+header nav .ink-text:hover span {
+  animation-name: bounceInDown;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.footer-heading-line {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.footer-heading-line span {
+  display: block;
+  height: 0.3rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #ec4899, #fb923c);
+}
+
+.footer-heading-line span:first-child {
+  width: 1.15rem;
+}
+
+.footer-heading-line span:last-child {
+  width: 3.5rem;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link::before {
+  content: "\f054";
+  color: #64748b;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.75rem;
+  font-weight: 900;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-link:hover::before {
+  color: #fff;
+}
+
+.ink-text {
+  color: #262626;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.15s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.45s;
+}
+
+.animate-delay-4 {
+  animation-delay: 0.6s;
+}
+
+.animate-delay-5 {
+  animation-delay: 0.75s;
+}
+
+.check-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  color: #fff;
+}
+
+.about-section .check-icon {
+  border: 2px solid #f55f8d;
+  background: transparent;
+  color: #f55f8d;
+}
+
+.scroll-animate {
+  visibility: hidden;
+}
+
+.scroll-animate.animate__animated {
+  visibility: visible;
+}
+
+.cd-top {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease,
+    background-position 0.5s ease;
+  background-size: 200%;
+  background-position: left center;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cd-top--fade-out {
+  opacity: 0.65;
+}
+
+.cd-top:hover {
+  background-position: right center;
+}
